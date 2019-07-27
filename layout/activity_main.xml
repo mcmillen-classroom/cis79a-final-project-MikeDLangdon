@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <!--<android.support.v7.widget.Toolbar-->
+        <!--android:id="@+id/toolbar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--/>-->
+
+    <LinearLayout
+        android:id="@+id/linearLayoutRecorder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp">
+        <!--android:layout_below="@+id/toolbar"-->
+
+
+
+        <Chronometer
+            android:id="@+id/chronometerTimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="60sp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_gravity="center_horizontal"
+            />
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            />
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/linearLayoutPlay"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:paddingStart="10dp"-->
+            <!--android:paddingEnd="10dp"-->
+            <!--android:visibility="gone"-->
+            <!--&gt;-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/imageViewPlay"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:src="@drawable/play_button_24"-->
+                <!--android:layout_gravity="center_vertical"-->
+                <!--android:clickable="true"-->
+                <!--android:tint="@android:color/darker_gray"-->
+                <!--android:focusable="true"-->
+                <!--android:background="?android:attr/selectableItemBackground"-->
+                <!--/>-->
+            <!---->
+
+        <!--</LinearLayout>-->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/play_button_top_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:height="@android:dimen/thumbnail_height"
+                    android:width="@android:dimen/thumbnail_width"
+                    android:layout_gravity="left"
+                    android:text="@string/play_button_text" />
+
+                <Button
+                    android:id="@+id/record_button_top_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:height="@android:dimen/thumbnail_height"
+                    android:width="@android:dimen/thumbnail_width"
+                    android:layout_gravity="left"
+                    android:text="@string/record_button_text" />
+
+                <Button
+                    android:id="@+id/stop_button_top_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:height="@android:dimen/thumbnail_height"
+                    android:width="@android:dimen/thumbnail_width"
+                    android:layout_gravity="left"
+                    android:text="@string/stop_button_text" />
+
+
+                <Button
+                    android:id="@+id/play_button_top_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:height="@android:dimen/thumbnail_height"
+                    android:width="@android:dimen/thumbnail_width"
+                    android:layout_gravity="right"
+                    android:text="@string/play_button_text" />
+
+                <Button
+                    android:id="@+id/record_button_top_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:height="@android:dimen/thumbnail_height"
+                    android:width="@android:dimen/thumbnail_width"
+                    android:layout_gravity="right"
+                    android:text="@string/record_button_text" />
+
+                <Button
+                    android:id="@+id/stop_button_top_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:height="@android:dimen/thumbnail_height"
+                    android:width="@android:dimen/thumbnail_width"
+                    android:layout_gravity="right"
+                    android:text="@string/stop_button_text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/play_button_bottom_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:height="@android:dimen/thumbnail_height"
+                    android:width="@android:dimen/thumbnail_width"
+                    android:layout_gravity="left"
+                    android:text="@string/play_button_text" />
+
+                <Button
+                    android:id="@+id/record_button_bottom_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:height="@android:dimen/thumbnail_height"
+                    android:width="@android:dimen/thumbnail_width"
+                    android:layout_gravity="left"
+                    android:text="@string/record_button_text" />
+
+                <Button
+                    android:id="@+id/stop_button_bottom_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:height="@android:dimen/thumbnail_height"
+                    android:width="@android:dimen/thumbnail_width"
+                    android:layout_gravity="left"
+                    android:text="@string/stop_button_text" />
+
+
+                <Button
+                    android:id="@+id/play_button_bottom_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:height="@android:dimen/thumbnail_height"
+                    android:width="@android:dimen/thumbnail_width"
+                    android:layout_gravity="right"
+                    android:text="@string/play_button_text" />
+
+                <Button
+                    android:id="@+id/record_button_bottom_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:height="@android:dimen/thumbnail_height"
+                    android:width="@android:dimen/thumbnail_width"
+                    android:layout_gravity="right"
+                    android:text="@string/record_button_text" />
+
+                <Button
+                    android:id="@+id/stop_button_bottom_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:height="@android:dimen/thumbnail_height"
+                    android:width="@android:dimen/thumbnail_width"
+                    android:layout_gravity="right"
+                    android:text="@string/stop_button_text" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--&gt;-->
+
+
+            <!--<ImageView-->
+                <!--android:id="@+id/imageViewRecord"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:src="@drawable/ic_mic_black_24dp"-->
+                <!--android:background="?android:attr/selectableItemBackground"-->
+                <!--android:layout_marginEnd="10dp"-->
+                <!--android:clickable="true"-->
+                <!--android:focusable="true"-->
+                <!--/>-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/imageViewStop"-->
+                <!--android:layout_width="42dp"-->
+                <!--android:layout_height="42dp"-->
+                <!--android:src="@drawable/stop_24"-->
+                <!--android:tint="@android:color/darker_gray"-->
+                <!--android:background="?android:attr/selectableItemBackground"-->
+                <!--android:layout_gravity="center_vertical"-->
+                <!--android:visibility="gone"-->
+                <!--android:clickable="true"-->
+                <!--android:focusable="true"-->
+                <!--/>-->
+
+        <!--</LinearLayout>-->
+
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

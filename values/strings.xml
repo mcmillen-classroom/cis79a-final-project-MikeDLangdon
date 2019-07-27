@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">For Sounds</string>
+
+    <string name="play_button_text">Play</string>
+    <string name="record_button_text">Record</string>
+    <string name="stop_button_text">Stop</string>
+
+    <string name="app_description">Sample four sounds and play them simultaneously.  Never forget a song idea.</string>
+
+    <string name="save_page_title_textview">Choose a file to save</string>
+    <string name="save_file_TL_textview">Left Upper</string>
+    <string name="save_file_TR_textview">Right Upper</string>
+    <string name="save_file_BL_textview">Left Lower</string>
+    <string name="save_file_BR_textview">Right Lower</string>
+
+    <string name="save_file_button">Save</string>
+</resources>
